@@ -18,95 +18,92 @@
   <link rel="stylesheet" href="style.css?nocache=%BUILD_TIMESTAMP">
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <img src="img/gt7info-logo.svg" width="400"/><br>
-      <h1 id="title">GT7 Online Dealerships & Info</h1>
-      <span id="details">
-        If you want to make a bot that uses this data, a JSON file is built from the data and can be found at:<br>
-        <a href="https://ddm999.github.io/gt7info/data.json">ddm999.github.io/gt7info/data.json</a><br>
-        This will update whenever the site is updated. <a href="https://ddm999.github.io/gt7info/json-dev-notes.html">For additional notes, click here.</a><br>
-        <br>
-        <strong><small>All dates are (YY-MM-DD)</small><br>
-        - Engine swaps & data updated for v1.49 (24-07-25)<br>
-        - <small>NOTE: stock performance PP values may not be updated for a long time. You'll have to deal with the old PP data for a while, which should be OK for rough estimations still</small><br>
-        - Stock performance PP values updated for v1.48, thanks to LittleGoron (24-05-30)<br>
-        - Added Extended Collector Level Calculator (24-04-29)<br>
-        - Additional details have been added to the data.json file (24-02-29)<br>
-        </strong>
-      </span>
-      <br><br>
-    </header>
-    <navigation>
-      <h2>Navigation:</h2>
-      <a href="#used-section">Auto+: Used Car Dealership</a><br>
-      <a href="#legend-section">Hagerty Collection: Legendary Dealership</a><br>
-      <a href="https://ddm999.github.io/gt7info/extended-level-calculator.html">Extended Collector Level Calculator</a><br>
-      <a href="https://ddm999.github.io/gt7info/campaign-rewards.html">Campaign Rewards</a><br>
-      <a href="https://ddm999.github.io/gt7info/engine-swaps.html">Engine Swaps</a><br>
-      <a href="https://ddm999.github.io/gt7info/menu-book-used.html">Menu Book Used Cars</a><br>
-      <a href="https://ddm999.github.io/gt7info/ticket-rewards.html">Ticket Rewards</a><br>
-      <a href="https://ddm999.github.io/gt7info/stock-perf.html">Stock Non-Special BoP Car PP Listing</a><br>
-      <a href="https://ddm999.github.io/gt7info/legacy-changes.html">Legacy Changelists</a><br>
+  <header>
+    <img src="img/gt7info-logo-mono.svg" width="400"/>
+    <h1 id="title">GT7 Online Dealerships & Info</h1>
+    <span id="details">
+      If you want to make a bot that uses this data, a JSON file is built from the data and can be found at:<br>
+      <a href="https://ddm999.github.io/gt7info/data.json">ddm999.github.io/gt7info/data.json</a><br>
+      This will update whenever the site is updated. <a href="https://ddm999.github.io/gt7info/json-dev-notes.html">For additional notes, click here.</a><br>
       <br>
-      Course BoP Divisions is being remade from scratch: these were changed in v1.43<br>
-      <a href="https://gt-engine.com/gt7/cars/gr1/gr1-01-specs.html">BoP for Gr.1 on GT ENGINE</a><br>
-      <a href="https://gt-engine.com/gt7/cars/gr2/gr2-01-specs.html">BoP for Gr.2 on GT ENGINE</a><br>
-      <a href="https://gt-engine.com/gt7/cars/gr3/gr3-01-specs.html">BoP for Gr.3 on GT ENGINE</a><br>
-      <a href="https://gt-engine.com/gt7/cars/gr4/gr4-01-specs.html">BoP for Gr.4 on GT ENGINE</a><br>
-      <a href="https://gt-engine.com/gt7/cars/grb/grb-01-specs.html">BoP for Gr.B on GT ENGINE</a><br>
-    </navigation>
-    <main>
-      <section id="used-section">
-        <div id="section-header">
-          <span id="used-cars"><img src="img/ucd-auto.svg"/>| USED CAR DEALERSHIP</span>
-          <span id="update-string">Last updated: %USEDCARS_UPDATESTRING (YY-MM-DD)</span>
-        </div>
-        <strong>Click on a car's name to see a graph of it's lowest price history.</strong><br>
-        You may see some cars before the ones displayed here.<br>
-        These come from the menu book you currently have active.<br>
-        <br>
-        Hover over the icons in the bottom-left of cars for more details on what they represent.<br>
-        Note that cars are always "Limited Stock" for 2 days.<br>
-        <span class="car-container">%USEDCARS_SECTION</span>
-        <span id="back-to-top"><a href="#navigation">Back to top</a></span>
-      </section>
-      <section id="legend-section">
-        <div id="section-header">
-          <h2 id="legend-cars"><img src="img/legend-hagerty.svg"/></h2>
-          <span id="update-string">Last updated: %LEGENDCARS_UPDATESTRING (YY-MM-DD)</span>
-        </div>
-        <strong style="color:#ccc">Click on a car's name to see a graph of it's lowest price history.</strong><br>
-        Hover over the icons in the bottom-left of cars for more details on what they represent.<br>
-        Note that cars are always "Limited Stock" for 2 days.<br>
-        <span class="car-container">%LEGENDCARS_SECTION</span>
-        <span id="back-to-top"><a href="#navigation">Back to top</a></span>
-      </section>
-      <section id="daily-races-section">
-        <h2 id="daily-races">Daily Race</h2>
-        <!--<span id="update-string">Last updated: %DAILYRACES_UPDATESTRING (YY-MM-DD)</span>-->
-        <strong style="color:#ddedf7">
-        (I've stopped tracking this here due to not having enough time, sorry!)<br>
-        Check tweets from the following users on Twitter:<br>
-        (Note that linked users also tweet about other things!)<br>
-        <a href="https://twitter.com/Mistah_MCA" style="color:#a3d5f5"><u>Mistah usually posts Daily Races as screenshots as they appear in-game at the start of a week.</u></a><br>
-        </strong>
-        <!--<span class="dailyrace-container">%DAILYRACES_SECTION</span>-->
-        <span id="back-to-top"><a href="#navigation">Back to top</a></span>
-      </section>
-    </main>
-    <footer>
-        This page is not affiliated with Polyphony Digital or Sony Interactive Entertainment.<br>
-        It is provided by fans of the Gran Turismo series.<br>
-        <br>
-        You may have issues if you browse with Internet Explorer, or any other outdated browser.<br>
-        <br>
-        Hosted on GitHub Pages - Source is available at <a href="https://github.com/ddm999/gt7info">github.com/ddm999/gt7info</a><br>
-        Styling adapted from <a href="https://github.com/orderedlist/minimal">github.com/orderedlist/minimal</a><br><br>
-        A JSON file for this data you can use with bots is available and updated here: <a href="https://ddm999.github.io/gt7info/data.json">ddm999.github.io/gt7info/data.json</a><br><br>
-        If you're interested in delving deeper into Gran Turismo / have an interest in GT5 and GT6 modding (which improves all the time!)<br>
-        you can hang out on the <a href="https://discord.gg/YbJjbYEKzB">GT Modding Community Discord</a>.<br>
-    </footer>
-  </div>
+      <strong><small>All dates are (YY-MM-DD)</small><br>
+      - Engine swaps & data updated for v1.49 (24-07-25)<br>
+      - <small>NOTE: stock performance PP values may not be updated for a long time. You'll have to deal with the old PP data for a while, which should be OK for rough estimations still</small><br>
+      - Stock performance PP values updated for v1.48, thanks to LittleGoron (24-05-30)<br>
+      - Added Extended Collector Level Calculator (24-04-29)<br>
+      - Additional details have been added to the data.json file (24-02-29)<br>
+      </strong>
+    </span>
+  </header>
+  <navigation>
+    <h2>Navigation:</h2>
+    <a href="#used-section">Auto+: Used Car Dealership</a><br>
+    <a href="#legend-section">Hagerty Collection: Legendary Dealership</a><br>
+    <a href="https://ddm999.github.io/gt7info/extended-level-calculator.html">Extended Collector Level Calculator</a><br>
+    <a href="https://ddm999.github.io/gt7info/campaign-rewards.html">Campaign Rewards</a><br>
+    <a href="https://ddm999.github.io/gt7info/engine-swaps.html">Engine Swaps</a><br>
+    <a href="https://ddm999.github.io/gt7info/menu-book-used.html">Menu Book Used Cars</a><br>
+    <a href="https://ddm999.github.io/gt7info/ticket-rewards.html">Ticket Rewards</a><br>
+    <a href="https://ddm999.github.io/gt7info/stock-perf.html">Stock Non-Special BoP Car PP Listing</a><br>
+    <a href="https://ddm999.github.io/gt7info/legacy-changes.html">Legacy Changelists</a><br>
+    <br>
+    Course BoP Divisions is being remade from scratch: these were changed in v1.43<br>
+    <a href="https://gt-engine.com/gt7/cars/gr1/gr1-01-specs.html">BoP for Gr.1 on GT ENGINE</a><br>
+    <a href="https://gt-engine.com/gt7/cars/gr2/gr2-01-specs.html">BoP for Gr.2 on GT ENGINE</a><br>
+    <a href="https://gt-engine.com/gt7/cars/gr3/gr3-01-specs.html">BoP for Gr.3 on GT ENGINE</a><br>
+    <a href="https://gt-engine.com/gt7/cars/gr4/gr4-01-specs.html">BoP for Gr.4 on GT ENGINE</a><br>
+    <a href="https://gt-engine.com/gt7/cars/grb/grb-01-specs.html">BoP for Gr.B on GT ENGINE</a><br>
+  </navigation>
+  <main>
+    <section id="used-section">
+      <div id="section-header">
+        <span id="used-cars"><img src="img/ucd-auto.svg"/>| USED CAR DEALERSHIP</span>
+        <span id="update-string">Last updated: %USEDCARS_UPDATESTRING (YY-MM-DD)</span>
+      </div>
+      <strong>Click on a car's name to see a graph of it's lowest price history.</strong><br>
+      You may see some cars before the ones displayed here.<br>
+      These come from the menu book you currently have active.<br>
+      <br>
+      Hover over the icons in the bottom-left of cars for more details on what they represent.<br>
+      Note that cars are always "Limited Stock" for 2 days.<br>
+      <span class="car-container">%USEDCARS_SECTION</span>
+      <span id="back-to-top"><a href="#navigation">Back to top</a></span>
+    </section>
+    <section id="legend-section">
+      <div id="section-header">
+        <h2 id="legend-cars"><img src="img/legend-hagerty.svg"/></h2>
+        <span id="update-string">Last updated: %LEGENDCARS_UPDATESTRING (YY-MM-DD)</span>
+      </div>
+      <strong style="color:#ccc">Click on a car's name to see a graph of it's lowest price history.</strong><br>
+      Hover over the icons in the bottom-left of cars for more details on what they represent.<br>
+      Note that cars are always "Limited Stock" for 2 days.<br>
+      <span class="car-container">%LEGENDCARS_SECTION</span>
+      <span id="back-to-top"><a href="#navigation">Back to top</a></span>
+    </section>
+    <section id="daily-races-section">
+      <h2 id="daily-races">Daily Race</h2>
+      <!--<span id="update-string">Last updated: %DAILYRACES_UPDATESTRING (YY-MM-DD)</span>-->
+      <strong style="color:#ddedf7">
+      (I've stopped tracking this here due to not having enough time, sorry!)<br>
+      Check tweets from the following users on Twitter:<br>
+      (Note that linked users also tweet about other things!)<br>
+      <a href="https://twitter.com/Mistah_MCA" style="color:#a3d5f5"><u>Mistah usually posts Daily Races as screenshots as they appear in-game at the start of a week.</u></a><br>
+      </strong>
+      <!--<span class="dailyrace-container">%DAILYRACES_SECTION</span>-->
+      <span id="back-to-top"><a href="#navigation">Back to top</a></span>
+    </section>
+  </main>
+  <footer>
+      This page is not affiliated with Polyphony Digital or Sony Interactive Entertainment.<br>
+      It is provided by fans of the Gran Turismo series.<br>
+      <br>
+      You may have issues if you browse with Internet Explorer, or any other outdated browser.<br>
+      <br>
+      Hosted on GitHub Pages - Source is available at <a href="https://github.com/ddm999/gt7info">github.com/ddm999/gt7info</a><br>
+      Styling adapted from <a href="https://github.com/orderedlist/minimal">github.com/orderedlist/minimal</a><br><br>
+      A JSON file for this data you can use with bots is available and updated here: <a href="https://ddm999.github.io/gt7info/data.json">ddm999.github.io/gt7info/data.json</a><br><br>
+      If you're interested in delving deeper into Gran Turismo / have an interest in GT5 and GT6 modding (which improves all the time!)<br>
+      you can hang out on the <a href="https://discord.gg/YbJjbYEKzB">GT Modding Community Discord</a>.<br>
+  </footer>
 </body>
 </html>
