@@ -1,3 +1,7 @@
+# Updated UI for GT7 Info
+
+Testing new UI for GT7 info, preview it [here](https://chrisephoto.github.io/gt7info-ui-update/).
+
 # GT7 Info
 
 The static website is built by `build.py` into the `build` folder.
